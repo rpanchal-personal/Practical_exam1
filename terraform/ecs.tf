@@ -38,8 +38,8 @@ resource "aws_ecs_service" "ecs_service" {
   launch_type     = "FARGATE"
 
   network_configuration {
-    security_groups = [aws_security_group.ecs_task_sg.id]
-    subnets         = [aws_subnet.ecs_vpc_public-1.id, aws_subnet.ecs_vpc_public-2.id]
+    security_groups  = [aws_security_group.ecs_task_sg.id]
+    subnets          = [aws_subnet.ecs_vpc_public-1.id, aws_subnet.ecs_vpc_public-2.id]
     assign_public_ip = true
   }
 
