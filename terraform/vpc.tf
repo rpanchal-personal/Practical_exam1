@@ -68,3 +68,5 @@ resource "aws_route_table_association" "ecs_vpc-public2-b" {
   subnet_id      = aws_subnet.ecs_vpc_public-2.id
   route_table_id = aws_route_table.ecs_vpc-public_rtb.id
 }
+
+# this is test
